@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Meta informations -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de Léhèn Haldin</title>
+    <link rel="stylesheet" href="PARTIE CSS/normalize.css">
+    <link rel="stylesheet" href="PARTIE CSS/styles.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+    <!-- Conteneur principal du CV -->
+    <div id="cv-container">
+        <!-- Section du profil avec photo -->
+        <header>
+            <div id="profile">
+                <!-- Photo de profil avec lien pour agrandir -->
+                <a href="images/image.png" target="_blank">
+                    <img src="images/image.png" alt="Photo de profil de Léhèn Haldin" id="profile-photo">
+                </a>
+                <h1>Léhèn Haldin</h1>
+                <h2>Développeur Web Junior</h2>
+                <!-- Coordonnées -->
+                <div id="contact">
+                    <p><a href="https://www.google.com/maps/place/82+Rue+de+Soleil,+92000+Nanterre" target="_blank">82 Rue de Soleil, 92000 Nanterre</a></p>
+                    <p><a href="mailto:store@nintendo.be">store@nintendo.be</a></p>
+                    <p><a href="tel:+33379950712">0379950712</a></p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Contenu principal du CV -->
+        <main>
+            <!-- Sidebar gauche -->
+            <div id="sidebar">
+                <!-- Section À propos -->
+                <section id="about">
+                    <h2>À propos de moi</h2>
+                    <p>Passionné par le développement web, je suis actuellement à la recherche d'un poste de développeur junior. Fort de mes expériences et formations, je souhaite intégrer une équipe dynamique pour participer à des projets innovants.</p>
+                </section>
+
+                <!-- Section Langues parlées -->
+                <section id="languages">
+                    <h2>Langues parlées</h2>
+                    <ul>
+                        <li>Français : Langue maternelle</li>
+                        <li>Anglais : Intermédiaire</li>
+                        <li>Espagnol : Débutant</li>
+                    </ul>
+                </section>
+
+                <!-- Section Centres d'intérêt -->
+                <section id="interests">
+                    <h2>Centre d’intérêt</h2>
+                    <ul>
+                        <li>Sport</li>
+                        <li>Bénévolat</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Contenu principal droit -->
+            <div id="content">
+                <!-- Section des expériences professionnelles -->
+                <section id="experience">
+                    <h2>Expériences Professionnelles</h2>
+                    <div>
+                        <h3>Chroniqueur au Kikoo show (2024 - en cours)</h3>
+                        <ul>
+                            <li>Analyses de films et séries</li>
+                            <li>Interviews</li>
+                            <li>Création de contenus humoristiques</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Professeur sur Nosdevoirs (2020 - 2024)</h3>
+                        <ul>
+                            <li>Développement de compétences pédagogiques</li>
+                            <li>Communication</li>
+                            <li>Adaptabilité</li>
+                            <li>Gestion du temps</li>
+                            <li>Recueil des avis des élèves</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section des formations -->
+                <section id="education">
+                    <h2>Formations</h2>
+                    <div>
+                        <h3>BTS informatique au Centre Européen de Formation (2024 - en cours)</h3>
+                    </div>
+                    <div>
+                        <h3>Baccalauréat général (2022) et Diplôme National du Brevet (DNB) (2019)</h3>
+                        <p>Lycée Michel Montaigne de Libreville</p>
+                    </div>
+                    <div>
+                        <h3>Openclassroom</h3>
+                        <ul>
+                            <li>Certification pour le langage de programmation Java (2024)</li>
+                            <li>Certification pour le langage de programmation Python (2024)</li>
+                            <li>Certification pour le langage de programmation C++ (2024)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section des compétences -->
+                <section id="skills">
+                    <h2>Compétences</h2>
+                    <ul>
+                        <li>Microsoft Word : niveau intermédiaire</li>
+                        <li>Français : langue maternelle</li>
+                        <li>Langage de programmation Scratch : niveau intermédiaire</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <!-- Section des réseaux sociaux -->
+        <footer>
+            <div id="social-icons">
+                <a href="https://www.linkedin.com" target="_blank"><img src="images/Linkedin.png" alt="LinkedIn"></a>
+                <a href="https://twitter.com" target="_blank"><img src="images/Twitter.png" alt="Twitter"></a>
+                <a href="https://github.com" target="_blank"><img src="images/Github.png" alt="GitHub"></a>
+            </div>
+            <p>Dernière mise à jour le <span id="last-updated"></span></p>
+        </footer>
+    </div>
+
+    <!-- Script pour afficher la date de dernière mise à jour automatiquement -->
+    <script>
+        document.getElementById('last-updated').textContent = new Date().toLocaleDateString('fr-FR', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+
+</html>
